@@ -30,3 +30,25 @@ module RBSWiki
     end
   end
 end
+
+if $0 == __FILE__
+  require 'rack'
+  require_relative "../rbswiki"
+
+  #use Rack::ShowExceptions
+
+  wiki = RBSWiki::Wiki.new
+
+  wiki.update_page("TopPage") do |page|
+    page.update(content: <<CONTENT)
+Welcome to RBSWiki!
+
+This is a simple wiki page to demostrate RBS programming.
+
+About [RBSwiki]
+CONTENT
+  end
+
+  #run RBSWiki::Server.new(wiki: wiki)
+  RBSWiki::Server.new(wiki: wiki)
+end
