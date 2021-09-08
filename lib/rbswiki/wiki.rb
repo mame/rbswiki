@@ -22,7 +22,7 @@ module RBSWiki
     def each_page(&block)
       if block
         @content.each do |name, content|
-          yield Page.load(name: name, content: content)
+          block.call Page.load(name: name, content: content)
         end
       else
         enum_for :each_page
