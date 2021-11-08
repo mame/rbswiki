@@ -1,14 +1,10 @@
-PATH
-  remote: ../typeprof
-  specs:
-    typeprof (0.20.0)
-      rbs (>= 1.6.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
     rack (2.2.3)
     rbs (1.6.2)
+    typeprof (0.20.2)
+      rbs (>= 1.6.2)
     webrick (1.7.0)
 
 PLATFORMS
@@ -17,7 +13,7 @@ PLATFORMS
 
 DEPENDENCIES
   rack
-  typeprof!
+  typeprof
   webrick
 
 BUNDLED WITH
