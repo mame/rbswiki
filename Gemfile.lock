@@ -2,9 +2,9 @@ GEM
   remote: https://rubygems.org/
   specs:
     rack (2.2.3)
-    rbs (1.6.2)
-    typeprof (0.20.2)
-      rbs (>= 1.6.2)
+    rbs (2.0.0)
+    typeprof (0.21.2)
+      rbs (>= 1.8.1)
     webrick (1.7.0)
 
 PLATFORMS
@@ -17,4 +17,4 @@ DEPENDENCIES
   webrick
 
 BUNDLED WITH
-   2.3.0.dev
+   2.3.3
